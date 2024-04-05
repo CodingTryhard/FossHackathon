@@ -3,5 +3,3 @@
 `npm init`
 `npm install expess`
 ` npm install nodemon`
-
-node_modules/
