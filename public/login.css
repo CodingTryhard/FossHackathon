@@ -84,7 +84,7 @@ h1{
     font-weight: 100;
     font-style: normal;
 }
-.h5 > span{
+.h5 > a{
     text-decoration: underline;
 }
 
@@ -144,4 +144,7 @@ a:visited {
     color: #00ADB5;
     background-color: transparent;
     text-decoration: none;
+}
+u{
+    color: #00ADB5;
 }
