@@ -22,6 +22,10 @@ app.get("/signup", (req, res) => {
 app.get("/login", (req, res) => {
   res.sendFile(__dirname + "/public/login.html");
 });
+app.post("/dashboard", (req, res) => {
+  res.sendFile(__dirname + "/public/dashboard.html");
+});
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
