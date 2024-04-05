@@ -1,0 +1,16 @@
+body{
+    background-color: #112D4E;
+}
+
+.container{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.img{
+    height:100%;
+    width:50%;
+    background-color: aliceblue;
+}

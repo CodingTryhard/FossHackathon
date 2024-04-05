@@ -1,12 +1,11 @@
 {
   "name": "hackathon",
   "version": "1.0.0",
-  "description": "",
+  "description": "[https://nodejs.org/en](https://nodejs.org/en)",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "author": "",
   "license": "ISC",
