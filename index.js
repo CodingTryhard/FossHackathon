@@ -12,8 +12,15 @@ app.get("/login", (req, res) => {
   res.sendFile(__dirname + "/public/login.html");
 });
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/home.html");
+});
+
+app.get("/signup", (req, res) => {
+  res.sendFile(__dirname + "/public/signup.html");
+});
+app.get("/login", (req, res) => {
+  res.sendFile(__dirname + "/public/login.html");
 });
 
 app.listen(port, () => {
