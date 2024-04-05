@@ -7,25 +7,120 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <h1>WELCOME BACK ,<%= username %></h1>
+    <h1>WELCOME BACK, <%= username %></h1>
     <div class="main-container">
       <div class="todo-list">
         To do
-        <ul id="myUL">
-          <li>Hit the gym</li>
-          <li class="checked">Pay bills</li>
-          <li>Meet George</li>
-          <li>Buy eggs</li>
-          <li>Read a book</li>
-          <li>Organize office</li>
+        <ul id="todoList">
+          <li onclick="this.remove()">
+            <input type="checkbox" />
+            <span>Example Task 1</span>
+          </li>
+          <li onclick="this.remove()">
+            <input type="checkbox" />
+            <span>Example Task 2</span>
+          </li>
         </ul>
+        <div>
+          <input type="text" id="taskInput" placeholder="Add a new task" />
+          <button onclick="addTask()">Add Task</button>
+        </div>
       </div>
       <div class="right-container">
-        <div class="progress-tracker">progress slider</div>
-        <div class="calender">calender</div>
+        <div class="progress">
+          <div class="progress-value">
+            <p>Syllabus Tracker</p>
+          </div>
+        </div>
+        <div class="calendar-wrapper">
+          <h1>April 2024</h1>
+          <ol class="calendar">
+            <li class="day-name">Sat</li>
+            <li class="day-name">Sun</li>
+            <li class="day-name">Mon</li>
+            <li class="day-name">Tue</li>
+            <li class="day-name">Wed</li>
+            <li class="day-name">Thu</li>
+            <li class="day-name">Fri</li>
+
+            <li class="first-day">1</li>
+
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+          </ol>
+        </div>
       </div>
     </div>
 
-    <script></script>
+    <div class="second-container">
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+    </div>
+
+    <script>
+      document
+        .getElementById("addTaskBtn")
+        .addEventListener("click", function () {
+          addTask();
+        });
+
+      function addTask() {
+        var input = document.getElementById("taskInput");
+        var taskName = input.value.trim();
+        if (taskName !== "") {
+          var ul = document.getElementById("todoList");
+          var li = document.createElement("li");
+          var checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.addEventListener("change", function () {
+            if (this.checked) {
+              removeTask(this);
+            }
+          });
+          var span = document.createElement("span");
+          span.textContent = taskName;
+          li.appendChild(checkbox);
+          li.appendChild(span);
+          ul.appendChild(li);
+          input.value = "";
+        } else {
+          alert("Please enter a task!");
+        }
+      }
+
+      function removeTask(checkbox) {
+        var li = checkbox.parentNode;
+        var ul = li.parentNode;
+        ul.removeChild(li);
+      }
+    </script>
   </body>
 </html>
