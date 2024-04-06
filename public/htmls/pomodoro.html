@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/pomodoro.css">
+<title>Pomodoro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='container'>
+        <form>
+            <div class='flex'>
+                    <div class='buttondiv'>
+                        <input type="radio" id="option1" name="options" value="option1">
+                        <label for="option1">Pomodoro</label>
+                    </div>
+                    <div class='buttondiv'>
+                        <input type="radio" id="option2" name="options" value="option2">
+                        <label for="option1">No Break</label>
+                    </div>
+                    <div class='buttondiv'>
+                        <input type="radio" id="option3" name="options" value="option3">
+                        <label for="option1">Long Break</label>
+                    </div>
+                    <div class='buttondiv'>
+                        <input type="radio" id="option4" name="options" value="option4">
+                        <label for="option1">Short Break</label>
+                    </div>
+                    <button class="close-button">×</button>
+            </div>        
+        </form>
+        <div class='img'><img src="../files/pomodoro-pic.png" height='340' width='450'></div>
+        <div class='time'><h1>21:00</h1></div>
+        <div class='options'>
+            <button class="restart">r</button>
+            <button class="pause">p</button>
+            <button class="play">pl</button>
+        </div>
+    </div>
+</body>
+</html>
