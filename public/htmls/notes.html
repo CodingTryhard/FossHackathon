@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="../styles/notes.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Need notes?</h1>
+      <h2>We got you. Heres what our community has uploaded for this course</h2>
+      <div class="boxes">
+        <h3>Subject 1</h3>
+      </div>
+      <div class="boxes"><h3>Subject 1</h3></div>
+      <div class="boxes"><h3>Subject 1</h3></div>
+      <div class="boxes"><h3>Subject 1</h3></div>
+    </div>
+
+    <script>
+      books = document.getElementsByClassName("boxes");
+      var i;
+      for (i = 0; i < books.length; i++) {
+        books[i].addEventListener("click", () => {
+          window.location = "http://localhost:3000/downloads";
+        });
+      }
+    </script>
+  </body>
+</html>

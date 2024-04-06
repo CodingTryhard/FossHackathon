@@ -52,6 +52,12 @@ app.post("/youtube_page", (req, res) => {
 app.get("/pomodoro", (req, res) => {
   res.sendFile(__dirname + "/public/htmls/pomodoro.html");
 });
+app.get("/notes", (req, res) => {
+  res.sendFile(__dirname + "/public/htmls/notes.html");
+});
+app.get("/downloads", (req, res) => {
+  res.sendFile(__dirname + "/public/htmls/downloads.html");
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

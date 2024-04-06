@@ -1,0 +1,49 @@
+body {
+  background-color: #222831;
+  color: white;
+}
+.main-container {
+  position: absolute;
+
+  width: 110vh;
+  left: 25%;
+
+  display: flex;
+  flex-direction: row;
+  background-color: #393e46;
+  height: 90vh;
+  justify-content: space-evenly;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+#pdf-list {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  left: 30px;
+  top: 90px;
+}
+#pdf-list li {
+  margin-bottom: 10px;
+}
+hr {
+  width: 100vh;
+}
+.pdf-link {
+  color: white;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Jet-Brains";
+  src: url("../fonts/JetBrainsMonoNL-Bold.ttf");
+}
+
+h1 {
+  font-family: Jet-Brains;
+
+  position: fixed;
+  top: 50px;
+  margin: 10px;
+}

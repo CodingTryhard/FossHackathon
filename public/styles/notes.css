@@ -1,0 +1,54 @@
+body {
+  background-color: #222831;
+  color: white;
+}
+.main-container {
+  position: absolute;
+  top: 20%;
+  width: 95%;
+
+  display: flex;
+  flex-direction: row;
+  background-color: #393e46;
+  height: 60vh;
+  justify-content: space-evenly;
+  margin: 30px;
+  border-radius: 10px;
+}
+.boxes {
+  position: relative;
+  background-color: #222831;
+  height: 40vh;
+  border-radius: 10px;
+  width: 200px;
+  top: 120px;
+  background-image: url("../files/qp-mock.png");
+  background-size: 200% 200%;
+  background-position: 25% 75%;
+}
+@font-face {
+  font-family: "Jet-Brains";
+  src: url("../fonts/JetBrainsMonoNL-Bold.ttf");
+}
+
+h1 {
+  font-family: Jet-Brains;
+
+  position: fixed;
+  left: 50px;
+  margin: 10px;
+}
+h2 {
+  font-family: Jet-Brains;
+  font-size: small;
+  position: absolute;
+  top: 10%;
+  left: 20px;
+  margin: 20px;
+}
+h3 {
+  font-family: Jet-Brains;
+  position: relative;
+  left: 40%;
+  top: 220px;
+}
