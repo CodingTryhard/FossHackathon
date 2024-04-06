@@ -2,15 +2,22 @@
 
 Brainwave is a web-app planned to help students achieve their full potential when self-studying.
 
+
+## UI (Proposed)
+
+The current model only allows for displaying the active featues of the web-app in a very basic manner (due to time constraints and a few other reasons). However, a more sleek and attractive UI has been designed and will be implemented as per the availablity of time.
+
+![Basic UI Design, scaled](https://github.com/A0D1I2L3/FossHackathon/assets/146623102/9645ad8c-2210-4c9c-afa7-5a68bfa201ef)
+
 ## Existing features
 These are the basic features that are planned to be made available right from the launch of the app.
 
 1.	Pomodoro Timer:
 Currently locks the user onto the countdown page. Provides 4 options for the timer, which can be divided into
-a)Pomodoro: 20+10Break
-b)No break: 30+0 Break
-c)Long break: 15+15Break
-d)Short break: 25+5Break
+- Pomodoro: 20+10Break
+- No break: 30+0 Break
+- Long break: 15+15Break
+- Short break: 25+5Break
 
 
 2.	To-do List/Scheduler: Allows user to mark down assignments and pending work as per their schedule. The list is always presented in a way that the one with the closest deadline is at the top.
@@ -38,9 +45,11 @@ More additions to the note taking section, mainly adding a number of different n
 ## Major Components used in the creation of this wep-app demo
 
 [HTML]
-[Javascript]
-[node.js](https://nodejs.org/en)
-[express](https://expressjs.com/)
-[CSS]
-[EJS](https://ejs.co/)
-[nodemon](https://www.npmjs.com/package/nodemon)
+- [Javascript]
+- [node.js](https://nodejs.org/en)
+- [express](https://expressjs.com/)
+- [CSS]
+- [EJS](https://ejs.co/)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+
+
