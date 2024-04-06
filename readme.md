@@ -44,7 +44,7 @@ More additions to the note taking section, mainly adding a number of different n
 
 ## Major Components used in the creation of this wep-app demo
 
-[HTML]
+- [HTML]
 - [Javascript]
 - [node.js](https://nodejs.org/en)
 - [express](https://expressjs.com/)
