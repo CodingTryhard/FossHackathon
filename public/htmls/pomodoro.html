@@ -14,31 +14,41 @@
         <form>
             <div class='flex'>
                     <div class='buttondiv'>
-                        <input type="radio" id="option1" name="options" value="option1">
-                        <label for="option1">Pomodoro</label>
+                        <input id='pomodoro' type="radio" id="option1" name="options" value="option1" checked>
+                        <label for="pomodoro">Pomodoro</label>
                     </div>
                     <div class='buttondiv'>
-                        <input type="radio" id="option2" name="options" value="option2">
-                        <label for="option1">No Break</label>
+                        <input id='nobreak' type="radio" id="option2" name="options" value="option2">
+                        <label for="nobreak">No Break</label>
                     </div>
                     <div class='buttondiv'>
-                        <input type="radio" id="option3" name="options" value="option3">
-                        <label for="option1">Long Break</label>
+                        <input id='longbreak' type="radio" id="option3" name="options" value="option3">
+                        <label for="longbreak">Long Break</label>
                     </div>
                     <div class='buttondiv'>
-                        <input type="radio" id="option4" name="options" value="option4">
-                        <label for="option1">Short Break</label>
+                        <input id='shortbreak' type="radio" id="option4" name="options" value="option4">
+                        <label for="shortbreak">Short Break</label>
                     </div>
-                    <button class="close-button">×</button>
+                    <audio id="sound">
+                        <source src="../files/beep-04.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
             </div>        
         </form>
         <div class='img'><img src="../files/pomodoro-pic.png" height='340' width='450'></div>
-        <div class='time'><h1>21:00</h1></div>
+        <div class='time'><h1 id='time'>00:00</h1></div>
         <div class='options'>
-            <button class="restart">r</button>
-            <button class="pause">p</button>
-            <button class="play">pl</button>
+            <button type='image' id='reset' class="restart">
+                <img src='../files/reset-512-4258979795.png' height='20' width='20';>
+            </button>
+            <button type='image' id='pause' class="pause">
+                <img src='../files/pause-vector-icon-2764096285.jpg' height='20' width='20';>
+            </button>
+            <button type='image' id='play' class="play">
+                <img src='../files/play-icon-svg-28-188590163.jpg' height='20' width='20';>
+            </button>
         </div>
     </div>
+    <script src='../scripts/pomodoro.js'></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: #222831;
 }
 input[type="radio"] {
     display: none;
@@ -59,8 +59,8 @@ label {
     width: 50;
     border-radius: 10px;
     background-color: white;
-    margin-left: 5vh;
-    margin-right: 2vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
     margin-top: 8vh;
     color: black;
     padding: 5px;
@@ -71,12 +71,10 @@ label {
     font-style: normal;
 }
 .flex > button{
-    transform: translateX(40px);
     height:30px;
     width:30px;
     border-radius: 5px;
     margin-top: 1vh;
-    margin-left: 20px;
     margin-right: 0;
 }
 .img{
@@ -90,14 +88,6 @@ label {
 img{
     border-radius: 25px;
 }
-h1{
-    color: white;
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 40px;
-}
 .options{
     display: flex;
     flex-direction: row;
@@ -106,5 +96,12 @@ h1{
 }
 .options > button{
     margin-left: 10px;
-    margin-right:10px;
+}
+h1{
+    color: white;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
 }
