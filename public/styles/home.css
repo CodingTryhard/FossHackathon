@@ -1,6 +1,7 @@
 body {
   background-color: black;
   font-family: "Reddit Mono", monospace;
+  overflow: hidden;
 }
 
 .flexbox {

@@ -59,6 +59,9 @@ app.get("/downloads", (req, res) => {
   res.sendFile(__dirname + "/public/htmls/downloads.html");
 });
 
+app.get("/forgot", (req, res) => {
+  res.sendFile(__dirname + "/public/htmls/forgot.html");
+});
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

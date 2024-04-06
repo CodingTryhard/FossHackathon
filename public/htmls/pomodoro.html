@@ -1,53 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../styles/pomodoro.css">
-<title>Pomodoro</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class='container'>
-        <form>
-            <div class='flex'>
-                    <div class='buttondiv'>
-                        <input id='pomodoro' type="radio" id="option1" name="options" value="option1" checked>
-                        <label for="pomodoro">Pomodoro</label>
-                    </div>
-                    <div class='buttondiv'>
-                        <input id='nobreak' type="radio" id="option2" name="options" value="option2">
-                        <label for="nobreak">No Break</label>
-                    </div>
-                    <div class='buttondiv'>
-                        <input id='longbreak' type="radio" id="option3" name="options" value="option3">
-                        <label for="longbreak">Long Break</label>
-                    </div>
-                    <div class='buttondiv'>
-                        <input id='shortbreak' type="radio" id="option4" name="options" value="option4">
-                        <label for="shortbreak">Short Break</label>
-                    </div>
-                    <audio id="sound">
-                        <source src="../files/beep-04.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-            </div>        
-        </form>
-        <div class='img'><img src="../files/pomodoro-pic.png" height='340' width='450'></div>
-        <div class='time'><h1 id='time'>00:00</h1></div>
-        <div class='options'>
-            <button type='image' id='reset' class="restart">
-                <img src='../files/reset-512-4258979795.png' height='20' width='20';>
-            </button>
-            <button type='image' id='pause' class="pause">
-                <img src='../files/pause-vector-icon-2764096285.jpg' height='20' width='20';>
-            </button>
-            <button type='image' id='play' class="play">
-                <img src='../files/play-icon-svg-28-188590163.jpg' height='20' width='20';>
-            </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/pomodoro.css" />
+    <title>Pomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="flex">
+          <div class="buttondiv">
+            <input
+              id="pomodoro"
+              type="radio"
+              id="option1"
+              name="options"
+              value="option1"
+              checked
+            />
+            <label for="pomodoro">Pomodoro</label>
+          </div>
+          <div class="buttondiv">
+            <input
+              id="nobreak"
+              type="radio"
+              id="option2"
+              name="options"
+              value="option2"
+            />
+            <label for="nobreak">No Break</label>
+          </div>
+          <div class="buttondiv">
+            <input
+              id="longbreak"
+              type="radio"
+              id="option3"
+              name="options"
+              value="option3"
+            />
+            <label for="longbreak">Long Break</label>
+          </div>
+          <div class="buttondiv">
+            <input
+              id="shortbreak"
+              type="radio"
+              id="option4"
+              name="options"
+              value="option4"
+            />
+            <label for="shortbreak">Short Break</label>
+          </div>
+          <audio id="sound">
+            <source src="../files/beep-04.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
         </div>
+      </form>
+      <div class="img">
+        <img src="../files/pomodoro-pic.png" height="340" width="450" />
+      </div>
+      <div class="time"><h1 id="time">00:00</h1></div>
+      <div class="options">
+        <button type="image" id="reset" class="restart">
+          <img
+            src="../files/reset-512-4258979795.png"
+            height="20"
+            width="20"
+            ;
+          />
+        </button>
+        <button type="image" id="pause" class="pause">
+          <img
+            src="../files/pause-vector-icon-2764096285.jpg"
+            height="20"
+            width="20"
+            ;
+          />
+        </button>
+        <button type="image" id="play" class="play">
+          <img
+            src="../files/play-icon-svg-28-188590163.jpg"
+            height="20"
+            width="20"
+            ;
+          />
+        </button>
+      </div>
     </div>
 
     <button class="button">
@@ -63,5 +108,6 @@
         ></path>
       </svg>
     </button>
+    <script src="../scripts/pomodoro.js"></script>
   </body>
 </html>

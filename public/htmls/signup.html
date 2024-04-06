@@ -28,30 +28,52 @@
     <div class="container">
       <div class="img"></div>
       <div class="login">
-        <a href="home.html"><h5 class="back">Back to home</h5></a>
-        <span>
-          <h1>SIGN UP</h1>
-        </span>
-        <div id="inputfields">
-          <div>
-            <input
-              type="text"
-              placeholder="Email"
-              id="input"
-              autocomplete="off"
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              placeholder="Password"
-              id="input"
-              autocomplete="off"
-            />
-          </div>
+        <div class="snow-ball-container">
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
+          <div class="snow-ball"></div>
         </div>
-        <div class="button">
-          <button class="cssbuttons-io" id="login"><span>Sign up</span></button>
+        <div class="functions">
+          <a href="/"><h5 class="back">Back to home</h5></a>
+          <span>
+            <h1>SIGN UP</h1>
+          </span>
+          <div id="inputfields">
+            <form action="/dashboard" method="post">
+              <input
+                type="text"
+                placeholder="Email"
+                id="input"
+                autocomplete="off"
+                name="Email"
+              />
+              <input
+                type="text"
+                placeholder="Password"
+                id="input"
+                autocomplete="off"
+                name="Password"
+              />
+              <input
+                class="cssbuttons-io"
+                id="login"
+                type="submit"
+                value="Sign Up"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </div>
