@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Jet-Brains";
+  src: url("../fonts/JetBrainsMonoNL-Bold.ttf");
+}
+body {
+  background-color: #222831;
+  color: white;
+  font-family: "Jet-Brains";
+}
+.main-container {
+  font-size: 25px;
+  background-color: #393e46;
+  margin: 50px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.main-container > h2 {
+  font-size: 20px;
+}
+
+.inputwaala {
+  background-color: #222831;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  height: 50px;
+  width: 50%;
+  margin-bottom: 0px;
+  color: white;
+  padding: 10px;
+}
+.buttonwaala {
+  border: 1px solid white;
+  background-color: #222831;
+  width: 50%;
+  color: white;
+  height: 40px;
+  margin-top: 0px;
+}
+button :hover {
+  border: 1px solid #222831;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube page</title>
+    <link rel="stylesheet" href="/styles/youtube_page.css" />
+  </head>
+  <body>
+    <h1>Focus Stream</h1>
+    <div class="main">
+      <iframe
+        width="1000"
+        height="700"
+        src="<%=newString%>?controls=0;&showinfo=0;&rel=0"
+      >
+      </iframe>
+
+      <div class="notes">
+        <h2>Notes</h2>
+        <textarea class="note-text"></textarea>
+        <button class="add-note">Add Note</button>
+        <ul class="note-list"></ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const noteInput = document.querySelector(".note-text");
+        const addNoteBtn = document.querySelector(".add-note");
+        const noteList = document.querySelector(".note-list");
+
+        addNoteBtn.addEventListener("click", function () {
+          const noteText = noteInput.value.trim();
+          if (noteText !== "") {
+            const noteItem = document.createElement("li");
+            noteItem.textContent = noteText;
+            noteList.appendChild(noteItem);
+            noteInput.value = "";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

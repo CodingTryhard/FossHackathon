@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/dashboard.css" />
-    <title>Dashboard</title>
+    <title>To Do list demo</title>
   </head>
   <body>
-    <h1>WELCOME BACK, <%= username %></h1>
+    <h1>This is a To-Do list</h1>
+    <h2>You can use the todo list to stay ahead of the curve 😉</h2>
     <div class="main-container">
       <div class="todo-list">
         To do
@@ -26,64 +27,22 @@
           <button onclick="addTask()">Add Task</button>
         </div>
       </div>
-      <div class="right-container">
-        <div class="progress">
-          <div class="progress-value">
-            <p>Syllabus Tracker</p>
-          </div>
-        </div>
-        <div class="calendar-wrapper">
-          <h1>April 2024</h1>
-          <ol class="calendar">
-            <li class="day-name">Sat</li>
-            <li class="day-name">Sun</li>
-            <li class="day-name">Mon</li>
-            <li class="day-name">Tue</li>
-            <li class="day-name">Wed</li>
-            <li class="day-name">Thu</li>
-            <li class="day-name">Fri</li>
-
-            <li class="first-day">1</li>
-
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li>23</li>
-            <li>24</li>
-            <li>25</li>
-            <li>26</li>
-            <li>27</li>
-            <li>28</li>
-            <li>29</li>
-            <li>30</li>
-          </ol>
-        </div>
-      </div>
     </div>
 
-    <div class="second-container">
-      <div class="boxes"></div>
-      <div class="boxes"></div>
-      <div class="boxes"></div>
-    </div>
+    <button class="animated-button">
+      <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+        <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+        ></path>
+      </svg>
+      <span class="text"><a href="calender">N E X T</a></span>
+      <span class="circle"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+        <path
+          d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+        ></path>
+      </svg>
+    </button>
 
     <script>
       document
@@ -121,6 +80,9 @@
         var ul = li.parentNode;
         ul.removeChild(li);
       }
+
+      timer = document.getElementById("currentTime");
+      timer.inner;
     </script>
   </body>
 </html>
