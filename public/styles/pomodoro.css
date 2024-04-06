@@ -2,57 +2,55 @@ body{
     background-color: #222831;
 }
 input[type="radio"] {
-    display: none;
+  display: none;
 }
-  
-  /* Style for custom radio button container */
+
+/* Style for custom radio button container */
 label {
-    position: relative;
-    padding-right: 3vh; /* Adjust spacing between text and border */
-    padding-left: 3vh;
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+  position: relative;
+  padding-right: 3vh; /* Adjust spacing between text and border */
+  padding-left: 3vh;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-  
-  /* Style for custom radio button */
+
+/* Style for custom radio button */
 input[type="radio"] + label:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 15vh; /* Width of the radio button */
-    height: 7vh; /* Height of the radio button */
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15vh; /* Width of the radio button */
+  height: 7vh; /* Height of the radio button */
 }
-  
 
 input[type="radio"]:checked + label:before {
-    border-radius:40px; 
+  border-radius: 40px;
 }
-  
-  /* Style for label text */
-label {
-    font-size: 14px;
-    color: #333;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(67, 66, 66);
-    border-radius: 20px;
-    width:130vh;
-    margin-left: 20%;
 
+/* Style for label text */
+label {
+  font-size: 14px;
+  color: #333;
 }
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgb(67, 66, 66);
-    border-radius: 20px;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(67, 66, 66);
+  border-radius: 20px;
+  width: 130vh;
+  margin-left: 20%;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(67, 66, 66);
+  border-radius: 20px;
 }
 .flex > div{
     height:30px;
@@ -77,16 +75,15 @@ label {
     margin-top: 1vh;
     margin-right: 0;
 }
-.img{
-    height:130px;
-    width:150px;
-    margin-top: 80px;
-    margin-right: 300px;
-    margin-bottom: 200px;
-
+.img {
+  height: 130px;
+  width: 150px;
+  margin-top: 80px;
+  margin-right: 300px;
+  margin-bottom: 200px;
 }
-img{
-    border-radius: 25px;
+img {
+  border-radius: 25px;
 }
 .options{
     display: flex;

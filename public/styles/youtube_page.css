@@ -34,23 +34,26 @@ h1 {
   width: 300px;
   border: 1px solid #ccc;
   padding: 10px;
-}
-.notes {
+  overflow: auto;
 }
 
 .note-text {
-  width: 100%;
+  width: calc(100% - 22px);
   height: 100px;
   margin-bottom: 10px;
 }
 
 .note-list {
+  width: 300px;
+
   list-style-type: none;
   padding: 0;
 }
 
 .note-list li {
   margin-bottom: 5px;
+  word-wrap: break-word;
+  max-width: calc(100% - 20px);
 }
 button {
   position: absolute;
@@ -61,4 +64,5 @@ button {
   color: white;
   border-radius: 10px;
   font-size: 20px;
+  padding: 20px;
 }
