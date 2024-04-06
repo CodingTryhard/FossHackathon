@@ -98,9 +98,8 @@ a {
   text-decoration: none;
 }
 .button {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  font-weight: bold;
+
   width: 120px;
   height: 30px;
   display: flex;
@@ -108,24 +107,27 @@ a {
   justify-content: flex-start;
   gap: 12px;
   cursor: pointer;
-  border: 3px solid rgb(255, 239, 94);
-  background-color: rgb(255, 239, 94);
+  border: 3px solid #393e46;
+  background-color: #393e46;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
-  border-radius: 0px;
+  position: absolute;
+  bottom: 20px; /* Position button at the bottom */
+  right: 20px;
 }
 
 .text {
-  width: 100%;
+  width: 70%;
   font-size: 20px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(27, 27, 27);
+  background-color: #393e46;
   color: white;
 }
 
 .arrow path {
-  fill: rgb(19, 19, 19);
+  fill: rgb(255, 255, 255);
 }
 
 .button:hover .arrow {
@@ -146,4 +148,8 @@ a {
 
 .button:active {
   transform: scale(0.97);
+}
+a {
+  color: #00adb5;
+  text-decoration: none;
 }

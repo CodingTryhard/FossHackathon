@@ -46,11 +46,13 @@ app.post("/youtube_page", (req, res) => {
       newString: newString,
     });
   } catch (e) {
-    res.send(
-      "<h1>Invalid Youtube link ,make sure you paste links that looks like youtube.com/watch?v=VideoId<h1>"
-    );
+    res.send("Invalid Youtube link");
   }
 });
+app.get("/pomodoro", (req, res) => {
+  res.sendFile(__dirname + "/public/htmls/pomodoro.html");
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

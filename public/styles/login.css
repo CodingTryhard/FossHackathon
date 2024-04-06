@@ -1,207 +1,211 @@
-body{
-    background-color: black;
-    color: #EEEEEE;
-    overflow-x: hidden;
-    overflow-y: hidden;
+body {
+  background-color: black;
+  color: #eeeeee;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 0;
 }
 .img {
-    height: 98vh;
-    width: 50%;
-    background-color: #00ADB5;
+  height: 100vh;
+  width: 50%;
+  background-image: url("../files/bubble.jpg");
+  background-size: cover;
+  background-position: 0, 0;
 }
 
 .login {
-    height: 98vh;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+  height: 98vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
-.back{
-    text-decoration: underline;
+.back {
+  text-decoration: underline;
 }
 
 #inputfields {
-    width: 100%; 
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
 
 #inputfields input {
-    border: 1px solid white;
-    width: 40%;
-    margin-left: 25%; 
-    margin-top: 2%;
-    height: 30px;
-    border-radius: 10px;
+  border: 1px solid white;
+  width: 40%;
+  margin-left: 25%;
+  margin-top: 2%;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .back {
-    text-align: right;
-    width: 100%; 
+  text-align: right;
+  width: 100%;
 }
 
-h1, h3, h4{
-    width: 100%; 
-    text-align: center; 
+h1,
+h3,
+h4 {
+  width: 100%;
+  text-align: center;
 }
-.container{
-    display: flex;
-    flex-direction: row;
+.container {
+  display: flex;
+  flex-direction: row;
 }
-.button{
-    width: 100%; 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#login{
-    margin-top: 3%;
-    width:40%;
-    margin-left: 25%;
-    height:35px;
-    border-radius: 10px;
-    color:ghostwhite!important;
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-h1{
-    font-family: "DM Serif Display", serif;
-    font-weight: 900;
-    font-style:normal;
-    font-size: 50px;
-    padding-top: 20%;
-    padding-left: 25%;
-    text-align: left;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    line-height:20px;
-}
-.h5{
-    padding-left: 25%;
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-weight: bold;
-}
-.h5 > a{
-    text-decoration: underline;
+#login {
+  margin-top: 3%;
+  width: 40%;
+  margin-left: 25%;
+  height: 35px;
+  border-radius: 10px;
+  color: ghostwhite !important;
 }
 
-.forgot{
-    padding-left: 52%;
-    text-align: left;
-    text-decoration: underline;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-weight: bold;
-    margin-bottom: 0;
-    padding-top: 0;
-    line-height: 0;
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+  padding-top: 20%;
+  padding-left: 25%;
+  text-align: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 20px;
 }
-.button{
-    width: 100%; 
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+.h5 {
+  padding-left: 25%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: bold;
+}
+.h5 > a {
+  text-decoration: underline;
+}
+
+.forgot {
+  padding-left: 52%;
+  text-align: left;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-top: 0;
+  line-height: 0;
+}
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 input {
-    color:#eeeeee;
-    flex-direction: row;
-    justify-content: left;
-    font-family: "Roboto", sans-serif;
-    background-color: black;
-    width: 80%; 
-    max-width: 300px; 
-    height: 40px; 
-    font-size: 1.2em; 
-    padding: 5px; 
-    border: none;
-    text-align: left;
+  color: #eeeeee;
+  flex-direction: row;
+  justify-content: left;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  width: 80%;
+  max-width: 300px;
+  height: 40px;
+  font-size: 1.2em;
+  padding: 5px;
+  border: none;
+  text-align: left;
 }
-h5{
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-weight: bold;
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-weight: bold;
 }
 
 a:link {
-    color: #00ADB5;
-    background-color: transparent;
-    text-decoration: none;
-}
-  
-a:visited {
-    color: #00ADB5;
-    background-color: transparent;
-    text-decoration: none;
-}
-u{
-    color: #00ADB5;
+  color: #00adb5;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-form > .cssbuttons-io{
-    padding:5px;
-    width:40%;
-    text-align: center;
+a:visited {
+  color: #00adb5;
+  background-color: transparent;
+  text-decoration: none;
 }
-form{
-    width:100%;
+u {
+  color: #00adb5;
+}
+
+form > .cssbuttons-io {
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+}
+form {
+  width: 100%;
 }
 .cssbuttons-io {
-    width: 150px;
-    position: relative;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.05em;
-    border-radius: 0.8em;
-    cursor: pointer;
-    border: none;
-    background: linear-gradient(to right, #00adb5, #00adb5);
-    color: ghostwhite;
-    overflow: hidden;
-    border: 1px solid white;
-  }
-  .cssbuttons-io span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-    display: inline-flex;
-    align-items: center;
-    padding: 0.8em 1.2em 0.8em 1.05em;
-    color: white;
-  }
-  .cssbuttons-io::before,
-  .cssbuttons-io::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  
-  .cssbuttons-io::before {
-    content: "";
-    background: #000;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-  }
-  
-  .cssbuttons-io:hover::before {
-    transform: translate3d(100%, 0, 0);
-  }
-  
-  .cssbuttons-io:active {
-    transform: scale(0.95);
-  }
-  
+  width: 150px;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #00adb5, #00adb5);
+  color: ghostwhite;
+  overflow: hidden;
+  border: 1px solid white;
+}
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+  color: white;
+}
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
