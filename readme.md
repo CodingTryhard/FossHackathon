@@ -3,9 +3,7 @@
 Brainwave is a web-app planned to help students achieve their full potential when self-studying.
 
 
-## UI (Proposed)
-
-The current model only allows for displaying the active featues of the web-app in a very basic manner (due to time constraints and a few other reasons). However, a more sleek and attractive UI has been designed and will be implemented as per the availablity of time.
+## UI 
 
 ![Basic UI Design, scaled](https://github.com/A0D1I2L3/FossHackathon/assets/146623102/9645ad8c-2210-4c9c-afa7-5a68bfa201ef)
 
